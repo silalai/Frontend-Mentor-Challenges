@@ -1,0 +1,270 @@
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url(https://fonts.google.com/specimen/Young+Serif);
+    font-weight: 400;
+
+    font-family: 'outfit';
+    src: url(https://fonts.google.com/specimen/Outfit);
+    font-weight: 400, 600, 700;
+    
+}
+@media (max-width: 735px) {
+    .Recipe-pic{
+        max-width: 520px;
+        margin-top: -35px;
+        
+    }
+    .head-detial{
+        max-width: 450px;
+        margin-left: 20px;;
+    }
+    .Prep-time{
+        max-width: 410px;
+    }
+    .Ingredients {
+        max-width: 450px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    .Instructions{
+        max-width: 450px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Nutrition{
+        max-width: 450px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --light-brown: hsl(14, 45%, 36%);
+    --dark-red: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body{
+    background-color: var(--Eggshell);
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    font-family: 'outfit', 'Young Serif';
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+html {
+    font-size: 62.5%;
+  }
+
+.Recipe-page{
+    background-color: white;
+    border-radius: 20px;
+    width: 735px;
+    flex-direction: column;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: start; /* จัดวางภายใน flex container ให้อยู่ตรงกลางในแนวตั้ง */
+    align-items: center; /* จัดวางภายใน flex container ให้อยู่ตรงกลางในแนวนอน */
+}
+
+/****************Image-Recipe********************/
+.Recipe-pic{
+    width: 650px;
+    border-radius: 20px;
+}
+
+/****************Head-Recipe********************/
+.head-detial{
+    width: 640px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.head-name{
+    font-family: 'Young serif';
+    font-size: 35px;
+    color: var(--Dark-Charcoal);
+}
+.detial-head{
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--Wenge-Brown);
+}
+
+/****************Preparation Time********************/
+.Prep-time{
+    width: 600px;
+    padding-top: 2px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    background-color: var(--Rose-White);
+    border-style: solid; /* กำหนดรูปแบบของเส้นขอบ */
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: rgb(250, 246, 242);
+}
+.head-Prep{
+    padding-top: 10px;
+    font-family: 'outfit';
+    font-size: 20px;
+    color: var(--dark-red);
+}
+.detial-Prep{
+    padding-left: 30px;
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--Wenge-Brown);
+    
+}
+/****************Ingredients********************/
+
+.Ingredients {
+    width: 640px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-bottom-style: solid; /* กำหนดรูปแบบของเส้นขอบเฉพาะด้านล่าง */
+    border-bottom-color: var(--Light-Grey); /* กำหนดสีของเส้นขอบเฉพาะด้านล่าง */
+    border-bottom-width: 1px;
+}
+
+.head-Ingred{
+    font-family: 'Young serif';
+    font-size: 25px;
+    color: var(--light-brown);
+}
+.list-Ingred{
+    padding-left: 20px;
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--light-brown);
+}
+.detial-Ingred{
+    
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--Wenge-Brown);
+}
+
+/****************Instructions********************/
+.Instructions{
+    width: 640px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-bottom-style: solid; /* กำหนดรูปแบบของเส้นขอบเฉพาะด้านล่าง */
+    border-bottom-color: var(--Light-Grey); /* กำหนดสีของเส้นขอบเฉพาะด้านล่าง */
+    border-bottom-width: 1px;
+}
+.head-Instruct{
+    font-family: 'Young serif';
+    font-size: 25px;
+    color: var(--light-brown);
+}
+.list-Instruct{
+    padding-left: 30px;
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--light-brown);
+}
+.list-Instruct li::marker {
+    font-weight: bold; /* ทำให้ตัวเลขที่นำหน้าลิสต์หนาขึ้น */
+}
+.detial-Instruct{
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--Wenge-Brown);
+}
+
+/****************Nutrition********************/
+.Nutrition{
+    width: 640px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.head-Nutri{
+    font-family: 'Young serif';
+    font-size: 25px;
+    color: var(--light-brown);
+    padding-top: 10px;
+}
+.detial-Nutri{
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--Dark-Charcoal);
+}
+.table {
+    display: table;
+    width: 600px;
+  }
+  
+.row {
+    display: table-row;
+}
+  
+.cell {
+    display: table-cell;
+    border-bottom: 1px solid var(--Light-Grey); /* เพิ่มเส้นขอบด้านล่าง */
+    padding: 15px;
+    padding-left: 30px;
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--Dark-Charcoal);
+}
+.cell2 {
+    display: table-cell;
+    border-bottom: 1px solid var(--Light-Grey); /* เพิ่มเส้นขอบด้านล่าง */
+    padding: 15px;
+    padding-left: 30px;
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--light-brown);
+    font-weight: bold;
+}
+.cell1 {
+    display: table-cell;
+    padding: 5px;
+    padding-left: 30px;
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--Dark-Charcoal);
+}
+.cell3 {
+    display: table-cell;
+    padding: 5px;
+    padding-left: 30px;
+    font-family: 'outfit';
+    font-size: 16px;
+    color: var(--light-brown);
+    font-weight: bold;
+}
+
+/****************Name********************/
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'outfit';
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
