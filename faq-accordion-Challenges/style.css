@@ -1,0 +1,350 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+@media (max-width: 735px) {
+    .container {/* ปรับเพิ่มระยะด้านบนเป็น 20px */
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        max-height: 600px;
+        max-width: 400px;
+        position: absolute;
+        top: 0;
+        left: 20px; /* ขยับไปทางซ้าย 20px */
+        z-index: 3; 
+        background-color: var(--White);
+    }
+}
+
+
+
+body {
+    height: 900px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* จัดให้ body อยู่ด้านล่างสุด */
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--Light-pink);
+}
+
+.attribution { 
+    font-size: 11px; 
+    width: 100%;
+    display: flex; /* เพิ่มส่วนนี้เพื่อใช้ Flexbox */
+    justify-content: center; /* จัดหน้าตารองให้อยู่ตรงกลางตามแนวนอน */
+    align-items: center;
+    margin-bottom: 90px;
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+
+.background {
+    width: auto;
+    height: 200px;
+    position: absolute; /* เปลี่ยนจาก relative เป็น fixed */
+    top: 0; /* ให้อยู่ที่ด้านบนสุดของหน้าเว็บ */
+    left: 0;
+    z-index: 1; 
+}
+
+.container {
+    margin: 160px auto 0; /* ปรับเพิ่มระยะด้านบนเป็น 20px */
+    display: flex;
+    justify-content: top;
+    align-items: top; /* เพิ่ม */
+    flex-direction: column;
+    border-radius: 20px;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0; /* ให้อยู่ที่ด้านบนสุดของหน้าเว็บ */
+    left: 380px;
+    z-index: 3; 
+    background-color: var(--White);
+}
+
+.h1{
+    margin: 50px 50px 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    position: absolute;
+    top: 0; /* ให้อยู่ที่ด้านบนสุดของหน้าเว็บ */
+    left: 60px;
+    z-index: 4; 
+}
+
+.h2{
+    display: flex;
+    justify-content: space-between; /* เพิ่ม justify-content: space-between เพื่อจัดปุ่ม plus และ minus ไปอยู่ด้านหลัง */
+    flex-direction: column;
+    width: 530px;
+    margin: 150px 40px 0;
+    padding: 10px 0px 20px;
+
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--Light-pink);
+
+}
+
+.h2-1{
+    display: flex;
+    justify-content: space-between; /* เพิ่ม justify-content: space-between เพื่อจัดปุ่ม plus และ minus ไปอยู่ด้านหลัง */
+    flex-direction: row;
+    width: 530px;
+    margin: -10px 0px 0;
+
+}
+
+.p1{
+    padding: 10px 0px ;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Dark-purple);
+    cursor: pointer;
+
+}
+
+.p1:hover {
+    color: var(--Grayish-purple); /* เปลี่ยนสีพื้นหลังเมื่อเมาส์ชี้ไปที่ element */
+}
+
+.plus-1{
+    display: none;
+    width: 35px;
+    height: 35px;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    padding: 10px 0px ;
+}
+
+.minus-1{
+    width: 35px;
+    height: 35px;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    padding: 10px 0px ;
+}
+
+
+.p2{
+    margin: 10px 0px 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: normal;
+    color: var(--Grayish-purple);
+
+}
+
+
+.h3{
+    display: flex;
+    justify-content: space-between; /* เพิ่ม justify-content: space-between เพื่อจัดปุ่ม plus และ minus ไปอยู่ด้านหลัง */
+    flex-direction: column;
+    width: 530px;
+    margin: 20px 40px 0;
+    padding: 10px 0px 20px;
+
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--Light-pink);
+}
+
+.h3-1{
+    display: flex;
+    justify-content: space-between; /* เพิ่ม justify-content: space-between เพื่อจัดปุ่ม plus และ minus ไปอยู่ด้านหลัง */
+    flex-direction: row;
+    width: 530px;
+    margin: -10px 0px 0;
+
+}
+
+.p3{
+    padding: 10px 0px ;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Dark-purple);
+    cursor: pointer;
+
+}
+
+.p3:hover {
+    color: var(--Grayish-purple); /* เปลี่ยนสีพื้นหลังเมื่อเมาส์ชี้ไปที่ element */
+}
+
+.plus-3{
+    display: none;
+    width: 35px;
+    height: 35px;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    padding: 10px 0px ;
+}
+
+.minus-3{
+    width: 35px;
+    height: 35px;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    padding: 10px 0px ;
+}
+
+
+.p4{
+    margin: 10px 0px 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: normal;
+    color: var(--Grayish-purple);
+
+}
+
+.h5{
+    display: flex;
+    justify-content: space-between; /* เพิ่ม justify-content: space-between เพื่อจัดปุ่ม plus และ minus ไปอยู่ด้านหลัง */
+    flex-direction: column;
+    width: 530px;
+    margin: 20px 40px 0;
+    padding: 10px 0px 20px;
+
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--Light-pink);
+}
+
+.h5-1{
+    display: flex;
+    justify-content: space-between; /* เพิ่ม justify-content: space-between เพื่อจัดปุ่ม plus และ minus ไปอยู่ด้านหลัง */
+    flex-direction: row;
+    width: 530px;
+    margin: -10px 0px 0;
+
+}
+
+.p5{
+    padding: 10px 0px ;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Dark-purple);
+    cursor: pointer;
+
+}
+
+.p5:hover {
+    color: var(--Grayish-purple); /* เปลี่ยนสีพื้นหลังเมื่อเมาส์ชี้ไปที่ element */
+}
+
+.plus-5{
+    display: none;
+    width: 35px;
+    height: 35px;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    padding: 10px 0px ;
+}
+
+.minus-5{
+    width: 35px;
+    height: 35px;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    padding: 10px 0px ;
+}
+
+
+.p6{
+    margin: 10px 0px 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: normal;
+    color: var(--Grayish-purple);
+
+}
+
+.h7{
+    display: flex;
+    justify-content: space-between; /* เพิ่ม justify-content: space-between เพื่อจัดปุ่ม plus และ minus ไปอยู่ด้านหลัง */
+    flex-direction: column;
+    width: 530px;
+    margin: 20px 40px 0;
+    padding: 10px 0px 20px;
+}
+
+.h7-1{
+    display: flex;
+    justify-content: space-between; /* เพิ่ม justify-content: space-between เพื่อจัดปุ่ม plus และ minus ไปอยู่ด้านหลัง */
+    flex-direction: row;
+    width: 530px;
+    margin: -10px 0px 0;
+
+}
+
+.p7{
+    padding: 10px 0px ;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Dark-purple);
+    cursor: pointer;
+
+}
+
+.p7:hover {
+    color: var(--Grayish-purple); /* เปลี่ยนสีพื้นหลังเมื่อเมาส์ชี้ไปที่ element */
+}
+
+.plus-7{
+    display: none;
+    width: 35px;
+    height: 35px;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    padding: 10px 0px ;
+}
+
+.minus-7{
+    width: 35px;
+    height: 35px;
+    margin: -10px 0 0 0;
+    cursor: pointer;
+    padding: 10px 0px ;
+}
+
+.p8{
+    margin: 10px 0px 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: normal;
+    color: var(--Grayish-purple);
+}
+
+.star{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 60px; /* ให้อยู่ที่ด้านบนสุดของหน้าเว็บ */
+    left: 40px;
+    z-index: 5;
+}
+
+
